@@ -1,11 +1,12 @@
 import Table from "react-bootstrap/Table";
+import styles from './Table.module.css'
 
 export default function Home() {
   return (
-    <div className="table-container">
+    <div className={styles['table-container']} >
       <h1>Standings</h1>
       <p>Here are the current standings for the league:</p>
-      <Table className="standings-table" bordered={false} hover>
+      <Table className={styles['standings-table']}  bordered={false} hover>
         <thead>
           <tr>
             <th>Picture</th>
