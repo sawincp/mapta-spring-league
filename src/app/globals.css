@@ -1,26 +1,30 @@
-@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right,
+    #3a25f2,
+    #9aefdb
+  );
+  margin: 0; /* Remove default body margin */
+
+  /* --- Centering styles --- */
+  display: flex; /* 1. Enable Flexbox layout */
+  justify-content: center; /* 2. Center content horizontally along the main axis */
+  align-items: center; /* 3. Center content vertically along the cross axis */
+  min-height: 100vh; /* 4. Ensure body is at least the full height of the viewport */
+ 
+}
+
+
+.standings-table th,
+.standings-table td {
+    text-align: left; 
+    background-color: transparent !important;
+    border: none;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: 15px 75px !important; /* Example padding: 10px top/bottom, 15px left/right */ 
 }

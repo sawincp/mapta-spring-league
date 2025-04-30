@@ -1,14 +1,34 @@
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import Table from "react-bootstrap/Table";
 
 export default function Home() {
   return (
-    <Container>
-      <Row className="my-4">
-        <Col>
-          <h1>Hello Bootstrap</h1>
-          <Button variant="primary">Click Me</Button>
-        </Col>
-      </Row>
-    </Container>
+    <div className="table-container">
+      <h1>Standings</h1>
+      <p>Here are the current standings for the league:</p>
+      <Table className="standings-table" bordered={false} hover>
+        <thead>
+          <tr>
+            <th>Picture</th>
+            <th>Team</th>
+            <th>Points</th>
+            <th>Weeks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>Freddorators</td>
+            <td>33</td>
+            <td>4/4</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Grovesters</td>
+            <td>29</td>
+            <td>4/4</td>
+          </tr>
+        </tbody>
+      </Table>
+    </div>
   );
 }
