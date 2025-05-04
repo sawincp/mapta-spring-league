@@ -1,10 +1,4 @@
-body{
-     /* --- Centering styles --- */
-  display: flex; /* 1. Enable Flexbox layout */
-  justify-content: center; /* 2. Center content horizontally along the main axis */
-  align-items: center; /* 3. Center content vertically along the cross axis */
-  min-height: 100vh; /* 4. Ensure body is at least the full height of the viewport */
-}
+
 
 .standings-table th,
 .standings-table td {
@@ -15,5 +9,5 @@ body{
 
 .standings-table th,
 .standings-table td {
-  padding: 15px 75px !important; /* Example padding: 10px top/bottom, 15px left/right */ 
+  padding: 15px 75px !important; 
 }

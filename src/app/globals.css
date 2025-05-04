@@ -1,30 +1,27 @@
 
-
 body {
+  /* Use flexbox for layout */
+  display: flex;
+  /* Align items to the top initially (vertical alignment) */
+  align-items: center;
+  /* Align items to the start (left) horizontally */
+  justify-content: flex-start;
+  min-height: 100vh;
   background: linear-gradient(
     to right,
     #3a25f2,
     #9aefdb
   );
-  margin: 0; /* Remove default body margin */
-
-  /* --- Centering styles --- */
-  /* display: flex;
-  justify-content: center; 
-  align-items: center; 
-  min-height: 100vh;  */
- 
+  /* Remove default body padding and margin if present */
+  padding: 0;
+  margin: 0;
 }
 
+.sideNav-container {
+ width: 450px;
+ padding: 100px;
+}
+.sideNav-container button {
+  margin-bottom: 50px;
+}
 
-/* .standings-table th,
-.standings-table td {
-    text-align: left; 
-    background-color: transparent !important;
-    border: none;
-} */
-
-/* .standings-table th,
-.standings-table td {
-  padding: 15px 75px !important; 
-} */
