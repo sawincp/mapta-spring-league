@@ -1,27 +1,25 @@
-
 body {
-  /* Use flexbox for layout */
   display: flex;
-  /* Align items to the top initially (vertical alignment) */
-  align-items: center;
-  /* Align items to the start (left) horizontally */
-  justify-content: flex-start;
-  min-height: 100vh;
-  background: linear-gradient(
-    to right,
-    #3a25f2,
-    #9aefdb
-  );
-  /* Remove default body padding and margin if present */
+  background: linear-gradient(to right,
+      #3a25f2,
+      #9aefdb);
   padding: 0;
   margin: 0;
 }
 
 .sideNav-container {
- width: 450px;
- padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  width: 250px; /* Adjust width as needed */
+  padding: 20px;
+  height: 100vh; /* Full height */
+  position: fixed; /* Keep it fixed on the left */
+  left: 0;
+  top: 0;
 }
+
 .sideNav-container button {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 

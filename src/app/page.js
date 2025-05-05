@@ -1,20 +1,40 @@
+"use client";
+
 import Table from "react-bootstrap/Table";
-import styles from './Table.module.css'
-import { Roboto_Mono } from 'next/font/google';
+import styles from "./Table.module.css";
+import { Roboto_Mono } from "next/font/google";
+
+import Nav from "react-bootstrap/Nav";
 
 export const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-mono', // Define another CSS variable
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto-mono",
 });
 
+const linkStyle = {
+  color: "white",
+};
 
 export default function Home() {
   return (
-    <div className={styles['table-container']} >
-      <h1 >Standings</h1>
-      <p>Here are the current standings for the league:</p>
-      <Table className={styles['standings-table']}  bordered={false} hover>
+    <div className={styles["table-container"]}>
+      <div className={styles["standings-header"]}>
+        <h1>Standings</h1>
+        <Nav activeKey="/" variant="underline">
+          <Nav.Item>
+            <Nav.Link href="/" style={linkStyle}>
+              Division 1
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/division2" style={linkStyle}>
+              Division 2
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </div>
+      <Table className={styles["standings-table"]} bordered={false} hover>
         <thead>
           <tr>
             <th>Picture</th>
