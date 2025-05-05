@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className={styles["table-container"]}>
       <div className={styles["standings-header"]}>
-        <h1>Standings</h1>
+        <h1>STANDINGS</h1>
         <Nav activeKey="/" variant="underline">
           <Nav.Item>
             <Nav.Link href="/" style={linkStyle}>
