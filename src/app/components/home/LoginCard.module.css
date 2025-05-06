@@ -16,8 +16,8 @@
 }
 
 .cardContent {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .icon {
@@ -26,7 +26,7 @@
 
 .text {
   display: inline-block;
-  position: center;
+  text-align: center;
 }
 
 

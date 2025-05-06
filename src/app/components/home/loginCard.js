@@ -27,7 +27,7 @@ export default function LoginCard() {
         <div className={styles.navContainer}>
           <Nav>
             <Button variant="outline-light" >
-              <Nav.Link href="/dashboard">Perforamnce</Nav.Link>
+              <Nav.Link href="/dashboard">Performnce</Nav.Link>
             </Button>
             <Button variant="outline-light">
               <Nav.Link href="/logout">Logout</Nav.Link>
