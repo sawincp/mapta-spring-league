@@ -14,6 +14,9 @@ export default function Sidenav() {
           <Nav.Link eventKey="link-2">Ratings</Nav.Link>
         </Button>
         <Button variant="outline-light">
+          <Nav.Link eventKey="link-2">Locations</Nav.Link>
+        </Button>
+        <Button variant="outline-light">
           <Nav.Link eventKey={"link-3"}>News</Nav.Link>
         </Button>
         <Button variant="outline-light">
