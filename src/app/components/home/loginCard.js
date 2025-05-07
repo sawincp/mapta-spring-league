@@ -4,10 +4,9 @@ import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import styles from "./LoginCard.module.css";
-import Image from "next/image";
-import logo from "../../assets/account_person.png";
 import { RiDashboard2Line } from "react-icons/ri";
 import { BiLogOut } from "react-icons/bi";
+import { IoMdPerson } from "react-icons/io";
 
 
 
@@ -16,14 +15,7 @@ export default function LoginCard() {
     <div className={styles.cardContainer}>
       <Card body className={styles.card}>
         <div className={styles.logoContainer}>
-          <Image
-            src={logo}
-            alt="Logo"
-            width={250}
-            height={100}
-            priority
-            style={{ objectFit: "contain" }}
-          />
+          <IoMdPerson size={100} />
         </div>
         <Card.Body className={styles.cardContent}>
           <Card.Text className={styles.text}>Corey Sawin | PTI: 31.0</Card.Text>

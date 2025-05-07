@@ -19,13 +19,13 @@ export default function Sidenav() {
           </Nav.Link>
         </Button>
         <Button variant="outline-light" className="mb-2">
-          <Nav.Link eventKey="link-2" className="d-flex align-items-center">
+          <Nav.Link href="/ratings" className="d-flex align-items-center">
             <FiBarChart className="me-2" size={18} />
             <span>Ratings</span>
           </Nav.Link>
         </Button>
         <Button variant="outline-light" className="mb-2">
-          <Nav.Link eventKey="link-2" className="d-flex align-items-center">
+          <Nav.Link href="/locations" className="d-flex align-items-center">
             <IoLocationOutline className="me-2" size={18} />
             <span>Locations</span>
           </Nav.Link>
