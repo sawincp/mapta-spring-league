@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Sidenav from "./components/home/sidenav";
-import LoginCard from "./components/home/loginCard";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body>
-        <LoginCard />
         <div className="header-container">
           <h1>
             MENS SPRING LEAGUE

@@ -1,5 +1,6 @@
 "use client";
 
+import LoginCard from "./components/home/loginCard";
 import Table from "react-bootstrap/Table";
 import styles from "./Table.module.css";
 import { Roboto_Mono } from "next/font/google";
@@ -58,6 +59,7 @@ export default function Home() {
           </tr>
         </tbody>
       </Table>
+      <LoginCard />
     </div>
   );
 }
