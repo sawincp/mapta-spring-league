@@ -23,7 +23,7 @@ export default function LoginCard() {
         <div className={styles.navContainer}>
           <Nav>
             <Button variant="outline-light">
-              <Nav.Link href="/dashboard" className="d-flex align-items-center">
+              <Nav.Link href="/profile" className="d-flex align-items-center">
                 <RiDashboard2Line className="me-2" size={25} />
               Profile
               </Nav.Link>

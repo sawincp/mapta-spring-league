@@ -1,0 +1,14 @@
+.profileContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 225px;
+    gap: 50px; /* Optional: space between "Profile" and "Corey Sawin" */
+    margin-left: 75px;
+}
+
+.profileContent h1,
+.profileContent p {
+    margin: 0;
+}
