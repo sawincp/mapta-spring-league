@@ -21,7 +21,7 @@ export default function Sidenav() {
         <Button variant="outline-light" className="mb-2">
           <Nav.Link href="/ratings" className="d-flex align-items-center">
             <FiBarChart className="me-2" size={18} />
-            <span>Ratings</span>
+            <span>Players</span>
           </Nav.Link>
         </Button>
         <Button variant="outline-light" className="mb-2">

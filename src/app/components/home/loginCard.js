@@ -25,7 +25,7 @@ export default function LoginCard() {
             <Button variant="outline-light">
               <Nav.Link href="/dashboard" className="d-flex align-items-center">
                 <RiDashboard2Line className="me-2" size={25} />
-              Performnce
+              Profile
               </Nav.Link>
             </Button>
             <Button variant="outline-light">
