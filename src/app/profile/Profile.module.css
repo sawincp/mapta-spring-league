@@ -14,12 +14,15 @@
 
 }
 
-.profileText p {
-  margin: 2px 0 0 0;
-  font-size: 14px;
-}
-
 .profileContent h1,
 .profileContent p {
-    margin: 0;
+    margin: 5;
 }
+
+.nav a {
+  color: white !important;
+  margin-right: 500px;
+
+}
+
+

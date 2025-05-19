@@ -9,9 +9,7 @@
 
 .performanceHeaders {
   display: flex;
-  flex-direction: row;
-  align-items: center; 
-  gap: 400px; /* space between icon and text */
+  gap: 350px;
   color: white;
   font-size: 14px;
 }
@@ -23,3 +21,4 @@
   color: white;
   font-size: 12px;
 }
+

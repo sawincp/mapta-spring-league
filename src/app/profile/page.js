@@ -6,10 +6,7 @@ import styles from "./Profile.module.css";
 import { IoPersonCircleOutline } from "react-icons/io5";
 
 function Profile() {
-  const linkStyle = {
-    color: "white",
-    marginTop: "50px",
-  };
+
 
   return (
     <div>
@@ -22,15 +19,15 @@ function Profile() {
         </div>
       </div>
       <div>
-        <Nav variant="underline">
+        <Nav variant="underline" defaultActiveKey="/profile" className= {styles.nav}>
           <Nav.Item>
-            <Nav.Link href="/profile" style={linkStyle}>
+            <Nav.Link href="/profile" className="active">
               Performance
             </Nav.Link>
           <Performance/>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/activity" style={linkStyle}>
+            <Nav.Link href="/activity">
               Activity
             </Nav.Link>
           </Nav.Item>
