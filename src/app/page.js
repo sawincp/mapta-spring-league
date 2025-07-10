@@ -1,8 +1,8 @@
 "use client";
 
-import LoginCard from "./components/home/loginCard";
+import LoginCard from "./components/home/LoginCard";
 import Table from "react-bootstrap/Table";
-import styles from "./Table.module.css";
+import styles from "./styles/table.module.css";
 import { Roboto_Mono } from "next/font/google";
 
 import Nav from "react-bootstrap/Nav";

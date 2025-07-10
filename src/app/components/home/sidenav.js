@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
-export default function Sidenav() {
+export default function SideNav() {
   return (
     <div className="sideNav-container">
       <Nav defaultActiveKey="/" className="flex-column">

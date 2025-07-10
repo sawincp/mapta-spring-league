@@ -1,8 +1,8 @@
 "use client";
 
-import Performance from "./performance";
+import Performance from "../components/profile/Performance";
 import Nav from "react-bootstrap/Nav";
-import styles from "./Profile.module.css";
+import styles from "../styles/profile.module.css";
 import { IoPersonCircleOutline } from "react-icons/io5";
 
 function Profile() {

@@ -3,7 +3,7 @@
 import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-import styles from "./LoginCard.module.css";
+import styles from "../../styles/login-card.module.css";
 import { RiDashboard2Line } from "react-icons/ri";
 import { BiLogOut } from "react-icons/bi";
 import { IoMdPerson } from "react-icons/io";

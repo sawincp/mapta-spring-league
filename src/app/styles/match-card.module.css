@@ -1,0 +1,13 @@
+.matchCard {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRow {
+  margin-bottom: 20px;
+}

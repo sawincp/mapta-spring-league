@@ -8,16 +8,18 @@
 }
 
 .performanceHeaders {
+  position:absolute;
   display: flex;
   gap: 350px;
   color: white;
   font-size: 14px;
+  
 }
 
 .performanceRow {
-  display: flex;
-  align-items: center; /* vertical alignment */
-  gap: 10px; /* space between icon and text */
+  position: relative;
+  align-items: center; 
+  gap: 10px; 
   color: white;
   font-size: 12px;
 }

@@ -1,6 +1,6 @@
-import MatchCard from "./matchCard";
+import MatchCard from "./MatchCard";
 
-import styles from "./Performance.module.css";
+import styles from "../../styles/performance.module.css";
 import { GoThumbsup } from "react-icons/go";
 import { GoThumbsdown } from "react-icons/go";
 import { MdOutlinePeopleOutline } from "react-icons/md";

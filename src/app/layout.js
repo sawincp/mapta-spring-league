@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Sidenav from "./components/home/sidenav";
+import SideNav from "../app/components/home/SideNav"
 
 
 const inter = Inter({
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
             PADDLE 2025
           </h1>
         </div>
-        <Sidenav />
+        <SideNav />
         {children}
       </body>
     </html>
