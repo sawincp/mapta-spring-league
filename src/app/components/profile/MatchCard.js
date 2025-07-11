@@ -4,7 +4,7 @@ import styles from "../../styles/match-card.module.css";
 
 export default function MatchCard() {
   return (
-    <div>
+    <div className={styles.matchCardContainer}>
       <h1>Matches</h1>
       <Card className={styles.matchCard}>
         <Card.Body className={styles.cardBody}>

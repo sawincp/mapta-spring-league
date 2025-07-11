@@ -1,4 +1,13 @@
+.matchCardContainer {
+  margin-top: 25px;
+  color: white;
+}
+.matchCardContainer h1{
+  font-size: 18px;
+}
+
 .matchCard {
+  display: flex;
   width: 500px;
   margin-bottom: 50px;
 }

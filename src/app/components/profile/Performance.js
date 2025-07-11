@@ -1,5 +1,3 @@
-import MatchCard from "./MatchCard";
-
 import styles from "../../styles/performance.module.css";
 import { GoThumbsup } from "react-icons/go";
 import { GoThumbsdown } from "react-icons/go";
@@ -9,10 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 export default function Performance() {
   return (
     <div className={styles.performanceContainer}>
-      <div className={styles.performanceHeaders}>
-        <h3>Rating</h3>
-        <MatchCard />
-      </div>
+      <h3 className={styles.ratingHeader}>Rating</h3>
       <div className={styles.performanceRow}>
         <GoThumbsup size="20px" />
         <span>Wins:</span>

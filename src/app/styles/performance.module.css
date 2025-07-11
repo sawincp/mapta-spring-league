@@ -2,25 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 25px;
-  gap: 25px; 
-  color: white ;
+  margin-top: 50px;
+  gap: 15px;
+  color: white;
 }
 
-.performanceHeaders {
-  position:absolute;
-  display: flex;
-  gap: 350px;
-  color: white;
-  font-size: 14px;
-  
+.ratingHeader {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .performanceRow {
-  position: relative;
-  align-items: center; 
-  gap: 10px; 
-  color: white;
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
 }
 
