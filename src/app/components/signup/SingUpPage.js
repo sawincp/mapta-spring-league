@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import LoginModal from "./LoginModal";
 import styles from "../../styles/login.module.css";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
+import SignUpModal from "./SignUpModal";
 
-const LoginPage = () => {
+ const SingUpPage = () => {
   const [modalShow, setModalShow] = useState(false);
 
   return (
@@ -14,15 +14,14 @@ const LoginPage = () => {
       <div className={styles.loginCard}>
         <>
           <Button variant="primary" onClick={() => setModalShow(true)}>
-           Login
+            Signup
           </Button>
 
-          <LoginModal show={modalShow} onHide={() => setModalShow(false)} />
+          <SignUpModal show={modalShow} onHide={() => setModalShow(false)} />
         </>
       </div>
     </div>
 
   );
 };
-
-export default LoginPage;
+export default SingUpPage;
