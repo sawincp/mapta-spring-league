@@ -5,6 +5,8 @@
   margin-top: 50px;
   gap: 15px;
   color: white;
+  position: sticky;
+  top: 25;
 }
 
 .ratingHeader {

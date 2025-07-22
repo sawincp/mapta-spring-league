@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/match-card.module.css";
 
 export default function MatchCard() {
+
   return (
     <div className={styles.matchCardContainer}>
       <h1>Matches</h1>

@@ -2,14 +2,30 @@
   margin-top: 25px;
   color: white;
 }
-.matchCardContainer h1{
-  font-size: 18px;
-}
-
 .matchCard {
   display: flex;
   width: 500px;
   margin-bottom: 50px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* .matchCard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.matchCard::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.matchCard::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+.matchCardContainer h1{
+  font-size: 18px;
 }
 
 .cardBody {

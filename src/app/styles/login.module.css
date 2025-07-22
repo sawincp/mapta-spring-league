@@ -1,0 +1,12 @@
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginCard {
+    width:900px;
+    text-align: center;
+}
