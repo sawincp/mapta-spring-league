@@ -42,6 +42,12 @@ export default function SideNav() {
             <span>Products</span>
           </Nav.Link>
         </Button>
+         <Button variant="outline-light" className="mb-2">
+          <Nav.Link href="/account" className="d-flex align-items-center">
+            <RiShoppingCart2Line className="me-2" size={23} />
+            <span>Account</span>
+          </Nav.Link>
+        </Button>
       </Nav>
     </div>
   );
