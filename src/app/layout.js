@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SideNav from "../app/components/home/SideNav"
-
+import SideNav from "../app/components/home/SideNav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,8 +24,11 @@ export default function RootLayout({ children }) {
             PADDLE 2025
           </h1>
         </div>
-        <SideNav />
-        {children}
+        <aside>
+          <SideNav />
+        </aside>
+        <div className="content-container">
+          {children}</div>
       </body>
     </html>
   );

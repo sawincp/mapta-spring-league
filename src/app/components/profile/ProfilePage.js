@@ -5,6 +5,7 @@ import MatchCard from "./MatchCard";
 import Nav from "react-bootstrap/Nav";
 import styles from "../../styles/profile.module.css";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { FaRegEdit } from "react-icons/fa";
 
 function ProfilePage() {
   return (
@@ -16,6 +17,11 @@ function ProfilePage() {
           <p>M • 36 • Chesterbrook, PA</p>
           <p>Picket Post • Right Handed</p>
         </div>
+        <Nav className={styles.nav}>
+          <Nav.Link href="/account">
+            <FaRegEdit />
+          </Nav.Link>
+        </Nav>
       </div>
       <div className={styles.navContainer}>
         <Nav

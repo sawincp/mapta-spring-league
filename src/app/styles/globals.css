@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+.content-container {
+  margin-left: 100px; /* match the fixed sidebar width */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sideNav-container {
   display: flex;
   flex-direction: column;

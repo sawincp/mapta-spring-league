@@ -1,3 +1,5 @@
+import React from "react";
+import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -6,6 +8,15 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 
 const LoginModal = (props) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Handle login logic here
+    console.log("Email:", email);
+  }
+
   return (
     <Modal
       {...props}
@@ -25,19 +36,29 @@ const LoginModal = (props) => {
               <Col xs={12} md={8}>
                 <Form.Group
                   className="mb-3"
-                  controlId="exampleForm.ControlInput1"
+                  controlId="emailInput"
                 >
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="firstname" placeholder="example@gmail.com" autoFocus />
+                  <Form.Control 
+                  type="email" 
+                  placeholder="example@gmail.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)} 
+                  autoFocus />
                 </Form.Group>
               </Col>
               <Col xs={12} md={4}>
                 <Form.Group
                   className="mb-3"
-                  controlId="exampleForm.ControlInput1"
+                  controlId="passwordInput"
                 >
                   <Form.Label>Pasword</Form.Label>
-                  <Form.Control type="lastname" autoFocus />
+                  <Form.Control 
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)} 
+                  autoFocus />
                 </Form.Group>
               </Col>
             </Row>
@@ -45,7 +66,7 @@ const LoginModal = (props) => {
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button onClick={handleLogin}>Login</Button>
       </Modal.Footer>
     </Modal>
   );

@@ -21,12 +21,17 @@
 
 .navContainer {
   margin-top: 50px;
+
+}
+
+.nav {
+  gap: 500px;
+
 }
 
 .nav a {
   color: white !important;
-  margin-right: 500px;
-
 }
+
 
 
