@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import styles from "../../styles/profile.module.css";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
+// import ActivityPage from "../activity/ActivityPage";
 
 function ProfilePage() {
   return (
@@ -36,7 +37,9 @@ function ProfilePage() {
             <Performance />
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/activity">Activity</Nav.Link>
+            <Nav.Link href="/activity">
+            Activity
+          </Nav.Link>
             <MatchCard />
           </Nav.Item>
         </Nav>
