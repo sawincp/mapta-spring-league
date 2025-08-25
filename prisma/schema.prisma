@@ -26,6 +26,7 @@ model User {
   role      Role     @default(USER)
   email     String
   password  String
+  currentRating    Float    @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -40,6 +41,7 @@ model Location {
   comments       String?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+ 
  profile Profile?
 }
 
@@ -50,6 +52,7 @@ model Profile {
   user        User     @relation(fields: [userId], references: [id])
   location    Location @relation(fields: [locationId], references: [id])
   phoneNumber String?
+  division    String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
