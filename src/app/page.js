@@ -1,10 +1,9 @@
 "use client";
 
-import LoginCard from "./components/home/LoginCard";
+import LoginCard from "./components/login/loginCard";
 import Table from "react-bootstrap/Table";
 import styles from "./styles/table.module.css";
 import { Roboto_Mono } from "next/font/google";
-
 import Nav from "react-bootstrap/Nav";
 
 export const roboto_mono = Roboto_Mono({
@@ -19,8 +18,8 @@ const linkStyle = {
 
 export default function Home() {
   return (
-    <div className={styles["table-container"]}>
-      <div className={styles["standings-header"]}>
+    <div className={styles.table_Container}>
+      <div className={styles.standings_Header}>
         <h1>STANDINGS</h1>
         <Nav activeKey="/" variant="underline">
           <Nav.Item>
@@ -32,10 +31,11 @@ export default function Home() {
             <Nav.Link href="/division2" style={linkStyle}>
               Division 2
             </Nav.Link>
+            
           </Nav.Item>
         </Nav>
       </div>
-      <Table className={styles["standings-table"]} bordered={false} hover>
+      <Table className={styles.standings_Table} bordered={false} hover>
         <thead>
           <tr>
             <th>Picture</th>
@@ -59,6 +59,7 @@ export default function Home() {
           </tr>
         </tbody>
       </Table>
+
       <LoginCard />
     </div>
   );
